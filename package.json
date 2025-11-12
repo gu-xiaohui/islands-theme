@@ -2,7 +2,7 @@
   "name": "islands-theme",
   "displayName": "Islands Theme",
   "description": "Islands Dark and Light themes ported from JetBrains IDEs - A beautiful, consistent color scheme for VS Code",
-  "version": "1.0.0",
+  "version": "2.0.1",
   "publisher": "kangsou",
   "engines": {
     "vscode": "^1.75.0"
