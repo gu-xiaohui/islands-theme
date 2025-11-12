@@ -18,9 +18,13 @@ Beautiful Dark and Light themes ported from JetBrains IDEs (RustRover, IntelliJ 
 
 ### Islands Dark
 A sophisticated dark theme with carefully balanced colors for reduced eye strain.
+<img width="1590" height="627" alt="image" src="https://github.com/user-attachments/assets/bd211743-7968-4b33-aaf4-b0b9b1242c59" />
+
 
 ### Islands Light  
 A clean and bright theme perfect for daytime coding.
+<img width="1600" height="647" alt="image" src="https://github.com/user-attachments/assets/ac388385-182a-4e38-975c-c6dd13547126" />
+
 
 ## 🚀 Installation
 
