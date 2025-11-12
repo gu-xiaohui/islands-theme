@@ -1,0 +1,10 @@
+.vscode/**
+.vscode-test/**
+.gitignore
+.DS_Store
+*.icls
+CONVERSION.md
+INSTALLATION.md
+QUICKSTART.md
+THEME_DETAILS.md
+Islands_Dark-theme.json

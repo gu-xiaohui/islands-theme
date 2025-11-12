@@ -1,0 +1,58 @@
+{
+  "name": "islands-theme",
+  "displayName": "Islands Theme",
+  "description": "Islands Dark and Light themes ported from JetBrains IDEs - A beautiful, consistent color scheme for VS Code",
+  "version": "1.0.0",
+  "publisher": "kangsou",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "color-theme",
+    "islands",
+    "dark theme",
+    "light theme",
+    "jetbrains",
+    "rustrover",
+    "intellij"
+  ],
+  "galleryBanner": {
+    "color": "#191a1c",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guxiaohui/islands-theme"
+  },
+  "bugs": {
+    "url": "https://github.com/guxiaohui/islands-theme/issues"
+  },
+  "homepage": "https://github.com/guxiaohui/islands-theme#readme",
+  "license": "MIT",
+  "contributes": {
+    "themes": [
+      {
+        "label": "Islands Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Islands_Dark-theme.json"
+      },
+      {
+        "label": "Islands Light",
+        "uiTheme": "vs",
+        "path": "./themes/Islands_Light-theme.json"
+      }
+    ]
+  },
+  "icon": "icon.png",
+  "scripts": {
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^2.22.0"
+  }
+}
