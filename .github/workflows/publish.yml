@@ -1,0 +1,61 @@
+name: Publish Extension
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'  # 当推送 v1.0.0 这样的标签时触发
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install vsce
+        run: npm install -g @vscode/vsce
+
+      - name: Package extension
+        run: vsce package
+
+      - name: Publish to VS Code Marketplace
+        if: success()
+        run: vsce publish -p ${{ secrets.VSCE_TOKEN }}
+        continue-on-error: true
+
+      - name: Publish to Open VSX Registry
+        if: success()
+        run: |
+          npm install -g ovsx
+          ovsx publish -p ${{ secrets.OVSX_TOKEN }}
+        continue-on-error: true
+
+      - name: Get version from package.json
+        id: package-version
+        run: echo "version=$(node -p \"require('./package.json').version\")" >> $GITHUB_OUTPUT
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: '*.vsix'
+          generate_release_notes: true
+          tag_name: v${{ steps.package-version.outputs.version }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload VSIX as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: islands-dark-theme-${{ steps.package-version.outputs.version }}
+          path: '*.vsix'

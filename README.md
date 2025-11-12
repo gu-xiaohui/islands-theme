@@ -35,7 +35,7 @@ A clean and bright theme perfect for daytime coding.
 4. Click Install
 
 ### Manual Installation
-1. Download the latest `.vsix` file from [Releases](https://github.com/guxiaohui/islands-theme/releases)
+1. Download the latest `.vsix` file from [Releases](https://github.com/gu-xiaohui/islands-theme/releases)
 2. Open VS Code
 3. Go to Extensions
 4. Click "..." menu → Install from VSIX
@@ -43,7 +43,7 @@ A clean and bright theme perfect for daytime coding.
 
 ### From Source
 ```bash
-git clone https://github.com/guxiaohui/islands-theme.git
+git clone https://github.com/gu-xiaohui/islands-theme.git
 cd islands-theme
 npm install
 npm run package
@@ -137,9 +137,9 @@ Originally based on the Islands Dark and Islands Light themes from JetBrains IDE
 ## 📮 Feedback
 
 If you enjoy this theme, please:
-- ⭐ Star the [GitHub repository](https://github.com/guxiaohui/islands-theme)
-- ✍️ Leave a review on the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=guxiaohui.islands-theme)
-- 🐛 Report issues on [GitHub Issues](https://github.com/guxiaohui/islands-theme/issues)
+- ⭐ Star the [GitHub repository](https://github.com/gu-xiaohui/islands-theme)
+- ✍️ Leave a review on the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=gu-xiaohui.islands-theme)
+- 🐛 Report issues on [GitHub Issues](https://github.com/gu-xiaohui/islands-theme/issues)
 
 ---
 
