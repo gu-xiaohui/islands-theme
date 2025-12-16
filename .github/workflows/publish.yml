@@ -21,9 +21,11 @@ jobs:
         with:
           node-version: '22'
           cache: 'npm'
-          
+
       - name: Install vsce
         run: npm install -g @vscode/vsce
+      - name: Install ovsx
+        run: npm install -g ovsx
 
       - name: Package extension
         run: npx vsce package
@@ -35,14 +37,12 @@ jobs:
 
       - name: Publish to Open VSX Registry
         if: success()
-        run: |
-          npm install -g ovsx
-          ovsx publish -p ${{ secrets.OVSX_TOKEN }}
+        run: ovsx publish -p ${{ secrets.OVSX_TOKEN }}
         continue-on-error: true
 
       - name: Get version from package.json
         id: package-version
-        run: echo "version=$(node -p \"require('./package.json').version\")" >> $GITHUB_OUTPUT
+        run: echo "version=$(node -p "require('./package.json').version")" >> $GITHUB_OUTPUT
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
