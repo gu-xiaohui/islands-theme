@@ -21,9 +21,9 @@ jobs:
         with:
           node-version: '22'
           cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
+          
+      - name: Install vsce
+        run: npm install -g @vscode/vsce
 
       - name: Package extension
         run: npx vsce package
