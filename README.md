@@ -18,12 +18,12 @@ Beautiful Dark and Light themes ported from JetBrains IDEs (RustRover, IntelliJ 
 
 ### Islands Dark
 A sophisticated dark theme with carefully balanced colors for reduced eye strain.
-<img width="1590" height="627" alt="image" src="https://github.com/user-attachments/assets/bd211743-7968-4b33-aaf4-b0b9b1242c59" />
+<img width="958" height="378" alt="image" src="https://github.com/user-attachments/assets/bd211743-7968-4b33-aaf4-b0b9b1242c59" />
 
 
 ### Islands Light  
 A clean and bright theme perfect for daytime coding.
-<img width="1600" height="647" alt="image" src="https://github.com/user-attachments/assets/ac388385-182a-4e38-975c-c6dd13547126" />
+<img width="934" height="378" alt="image" src="https://github.com/user-attachments/assets/ac388385-182a-4e38-975c-c6dd13547126" />
 
 
 ## 🚀 Installation
@@ -138,7 +138,7 @@ Originally based on the Islands Dark and Islands Light themes from JetBrains IDE
 
 If you enjoy this theme, please:
 - ⭐ Star the [GitHub repository](https://github.com/gu-xiaohui/islands-theme)
-- ✍️ Leave a review on the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=gu-xiaohui.islands-theme)
+- ✍️ Leave a review on the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=kangsou.islands-theme)
 - 🐛 Report issues on [GitHub Issues](https://github.com/gu-xiaohui/islands-theme/issues)
 
 ---
